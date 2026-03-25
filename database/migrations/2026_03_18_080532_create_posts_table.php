@@ -17,7 +17,7 @@ return new class extends Migration
             $table->string('slug')->unique();
             $table->integer('category_id')->constrained()->cascadeOnDelete();
             $table->string('color')->nullable();
-            $table->string('image')->nullable();
+            $table->string('Image')->nullable();
             $table->text('body');
             $table->json('tags')->nullable();
             $table->boolean('published')->default(false);
